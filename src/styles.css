@@ -1,0 +1,630 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "JejuMyeongjo";
+  src: url("https://db.onlinewebfonts.com/t/1a5c2d8bbd4e28d99a6efcbb9a5b378f.eot");
+  src: url("https://db.onlinewebfonts.com/t/1a5c2d8bbd4e28d99a6efcbb9a5b378f.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1a5c2d8bbd4e28d99a6efcbb9a5b378f.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/1a5c2d8bbd4e28d99a6efcbb9a5b378f.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1a5c2d8bbd4e28d99a6efcbb9a5b378f.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1a5c2d8bbd4e28d99a6efcbb9a5b378f.svg#JejuMyeongjo")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: radial-gradient(#02191d);
+  background: #02191d;
+  color: #ffffff;
+  font-family: "Jeju Myeongjo";
+  font-family: "JejuMyeongjo";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* ********************************************** */
+/* ****************  MAIN *********************** */
+.main {
+  max-width: 70rem;
+  margin: 3rem auto;
+  padding: 4.8rem;
+  border: 1px solid #0e464f;
+  border-radius: 3rem;
+}
+.container {
+  display: none;
+}
+.container.active {
+  display: block;
+}
+
+.step-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-title {
+  font-size: 3.2rem;
+}
+
+.step-num {
+  font-family: "Roboto", serif;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  background: #0e464f;
+  position: relative;
+  margin: 1.2rem 0 3.2rem;
+  overflow: hidden;
+}
+
+.progress {
+  background: #24a0b5;
+  height: 4px;
+  transition: all 0.3s ease;
+}
+
+/* ********************************************** */
+/* ************** CONTAINER ********************* */
+/* ********************************************** */
+.ticket-container {
+  background: #08252b;
+  margin: 3.2rem 0;
+  border-radius: 3.2rem;
+  border: 1px solid #0e464f;
+  padding: 2.4rem;
+}
+
+.ticket-details {
+  text-align: center;
+  padding: 2.4rem;
+  border: 2px solid #07373f;
+  margin-bottom: 8px;
+  border-radius: 2.4rem;
+  min-height: 20rem;
+}
+.ticket-heading {
+  font-family: "Road Rage", serif;
+  font-weight: 400;
+  font-size: 6.2rem;
+  line-height: 1;
+  color: #fafafa;
+}
+.ticket-description {
+  display: block;
+}
+.event-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+/* ********************************************** */
+/* ******************* LINE ********************* */
+/* ********************************************** */
+
+.line {
+  width: 100%;
+  height: 0.4rem;
+  background: #07373f;
+  margin: 3.2rem 0;
+}
+
+/* ********************************************** */
+/* ******************* ABOUT ******************** */
+/* ********************************************** */
+.about {
+  font-family: Roboto;
+}
+
+.about-title {
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.about-p {
+  font-size: 1.8;
+  line-height: 1.8;
+}
+.mail-to {
+  color: #fafafa;
+}
+.mail-to:hover {
+  text-decoration: none;
+}
+/* ********************************************** */
+/* **************** TICKET TYPES **************** */
+/* ********************************************** */
+
+.ticket-type-container {
+  position: relative;
+}
+
+.select-ticket {
+  margin-bottom: 0.8rem;
+}
+
+.tickets {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 1.3rem;
+  padding: 1.6rem;
+  background: #052228;
+  border: 1px solid #07373f;
+  border-radius: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.ticket {
+  font-family: "Roboto", serif;
+  border: 2px solid #197686;
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  width: 100%;
+  min-height: 11rem;
+}
+
+.ticket.active {
+  background: #12464e;
+}
+
+.ticket-price {
+  font-size: 2.4rem;
+  line-height: 1.1;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #ffffff;
+}
+
+.ticket-name {
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.4rem;
+  color: #fafafa;
+}
+
+.ticket-left {
+  display: block;
+  font-size: 1.4rem;
+  color: #d9d9d9;
+}
+
+/* ********************************************** */
+/* ************** TICKET QUANTITY *************** */
+/* ********************************************** */
+.ticket-quantity {
+  margin-bottom: 3.2rem;
+}
+.quantity-label {
+  display: block;
+  color: #fafafa;
+  margin-bottom: 0.8rem;
+}
+.quantity-select {
+  width: 100%;
+  padding: 1.2rem;
+  background: #07373f;
+  outline: 1px solid #07373f;
+  border: 1px solid #0e464f;
+  color: #ffffff;
+  border-radius: 1.2rem;
+}
+/* ********************************************** */
+/* *************** BUTTONS ********************** */
+/* ********************************************** */
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+}
+
+.button {
+  padding: 1.2rem 2.4rem;
+  border: 1px solid #24a0b5;
+  cursor: pointer;
+  background: inherit;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-primary {
+  background: #24a0b5;
+  color: #ffffff;
+}
+
+.button-secondary {
+  color: #24a0b5;
+}
+.button-secondary:hover {
+  color: #fafafa;
+}
+/* ********************************************** */
+/* **************** PROFILE PHOTO ************** */
+/* ********************************************** */
+.profile-container {
+  position: relative;
+  background: #052228;
+  border: 1px solid #07373f;
+  max-width: 55.6rem;
+  margin: 3.2rem auto;
+  width: 100%;
+  padding: 2.4rem 2.4rem 4.8rem;
+  border-radius: 2.4rem;
+}
+
+.profile-text {
+  font-family: "Roboto", serif;
+  color: #fafafa;
+  margin-bottom: 3.2rem;
+}
+
+.upload-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.upload-area {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 24rem;
+  height: 24rem;
+  padding: 2.4rem;
+  background: #0e464f;
+  color: #fafafa;
+  border-radius: 3.2rem;
+  border: 4px solid #24a0b5;
+  object-fit: contain;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Outline effect on hover */
+.upload-area:hover {
+  border-color: #fafafa;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+.uploading {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+.avatar-preview {
+  position: absolute;
+  width: 24rem;
+  height: 24rem;
+  object-fit: cover;
+  border: 4px solid black;
+}
+
+/* Handling drag and drop effect */
+.upload-area.dragover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+}
+
+/* Styling the uploaded image */
+.image-preview {
+  width: 100%;
+  height: 100%;
+  border-radius: 3.2rem;
+  object-fit: cover;
+}
+
+/* Styling the upload icon */
+.upload-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  fill: #0e464f;
+  stroke: #fafafa;
+}
+
+.drag-text {
+  font-family: "Roboto", serif;
+  color: #fafafa;
+}
+
+/* ********************************************** */
+/* ************** USER FORM ********************* */
+/* ********************************************** */
+
+.form-container {
+  color: #fafafa;
+  font-family: "Roboto", serif;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border: 1px solid #07373f;
+  border-radius: 1.2rem;
+  background: transparent;
+  color: #fafafa;
+  outline: none;
+}
+::placeholder {
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.form-textarea {
+  min-height: 12.7rem;
+}
+.form-textarea::placeholder {
+  color: #aaa;
+}
+.with-icon {
+  position: relative;
+  padding-left: 4rem;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(10%);
+}
+
+.error-message {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: #e90f0f;
+  font-weight: 800;
+}
+
+/* ********************************************** */
+/* *************** BOOKED TICKET *************** */
+/* ********************************************** */
+.ticket-confirmation-container {
+  text-align: center;
+  width: 100%;
+  margin: 3.2rem auto;
+  font-family: Roboto;
+}
+.confirmation-title {
+  font-weight: bold;
+  font-size: 3.2rem;
+}
+.booked-ticket {
+  background-image: url("../public/confirmation-container.png");
+  background-repeat: no-repeat;
+  width: 30rem;
+  margin: 2rem auto;
+  min-height: 60rem;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-booking-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: #031e21;
+  width: 26rem;
+  max-width: 100%;
+  min-height: 44.6rem;
+  padding: 1.4rem;
+  border-radius: 1.6rem;
+  border: 1px solid #24a0b5;
+}
+
+.user-booking-details {
+  min-width: 17.5rem;
+  margin: 0 auto;
+}
+
+.user-detail-title {
+  font-family: Road Rage;
+  font-weight: 400;
+  font-size: 3.4rem;
+}
+.con-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: Roboto;
+  font-size: 1rem;
+  padding: 4px;
+}
+.avatar-container {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 1.2rem;
+  border: 4px solid #24a0b5;
+  overflow: hidden;
+}
+.avatar-display {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 1.2rem;
+  object-fit: cover;
+}
+
+.bar-code {
+  height: 15rem;
+}
+
+.user-details {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 4px;
+  background: #08343c;
+  border: 1px solid #133d44;
+  border-radius: 8px;
+  font-family: Roboto;
+
+  /* column-gap: 8px; */
+}
+.user-details div:last-child {
+  grid-column: 1 / span 2;
+}
+.user-details > div {
+  padding: 4px;
+}
+.padding-left {
+  padding-left: 8px;
+}
+.border-right {
+  border-right: 1px solid #12464e;
+}
+.border-bottom {
+  border-bottom: 1px solid #12464e;
+}
+.email {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+.detail-title,
+.detail-result-type {
+  font-size: 1rem;
+}
+.detail-title {
+  margin-bottom: 4px;
+}
+
+.detail-result {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* ********************************************** */
+/* ********************************************** */
+
+.c-ticket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  overflow: hidden;
+}
+.mobile-p {
+  display: none;
+}
+.desktop-p {
+  display: block;
+}
+.d {
+  cursor: pointer;
+}
+.d:hover {
+  text-decoration: underline;
+}
+/* ********************************************** */
+/* ********************************************** */
+
+@media (max-width: 768px) {
+  .main {
+    padding: 2.4rem;
+  }
+  .step-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+  .step-title {
+    font-size: 2.4rem;
+  }
+  .ticket-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 24.3rem;
+    padding: 1.6rem 2.4rem;
+  }
+  .ticket-heading {
+    font-size: 4.6rem;
+  }
+  .ticket-description {
+    display: inline;
+    font-size: 1.4rem;
+  }
+  .event-details {
+    flex-direction: column;
+  }
+  .event-details-demacation {
+    display: none;
+  }
+  .tickets {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+  .ticket {
+    width: 100%;
+  }
+  .ticket-name {
+    font-size: 1.6rem;
+  }
+  .button-container {
+    grid-template-columns: 1fr;
+  }
+  .button-primary {
+    grid-row: 1;
+  }
+  .upload-box {
+    background: transparent;
+  }
+  .confirmation-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+  .mobile-p {
+    display: block;
+  }
+  .desktop-p {
+    display: none;
+  }
+}
